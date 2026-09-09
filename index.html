@@ -1,159 +1,31 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Fouad OS — نظام لينكس حديث، أنيق، وسهل الاستخدام." />
+    <meta name="description" content="Fouad OS — a modern, elegant, and easy-to-use Linux distribution." />
     <meta name="theme-color" content="#071329" />
-    <title>Fouad OS | نظامك، بطريقتك</title>
+    <title>Fouad OS | Your system, your way</title>
     <link rel="icon" type="image/svg+xml" href="branding/icons/fouad-os.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow glow-one"></div>
-    <div class="page-glow glow-two"></div>
-
+    <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="Fouad OS الرئيسية">
-        <img src="branding/icons/fouad-os.svg" alt="" />
-        <span>Fouad <b>OS</b></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" aria-label="التنقل الرئيسي">
-        <a href="#features">المميزات</a>
-        <a href="#requirements">المتطلبات</a>
-        <a href="#install">التثبيت</a>
-        <a class="nav-download" data-download href="downloads/fouad-os-live-2026.09.09-x86_64.iso">تحميل النظام</a>
-      </nav>
+      <a class="brand" href="#top" aria-label="Fouad OS home"><img src="branding/icons/fouad-os.svg" alt="" /><span>Fouad <b>OS</b></span></a>
+      <div class="header-actions"><button class="language-toggle" type="button" aria-label="Switch language">العربية</button><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#features" data-i18n="navFeatures">Features</a><a href="#requirements" data-i18n="navRequirements">Requirements</a><a href="#install" data-i18n="navInstall">Install</a><a class="nav-download" data-download href="https://drive.google.com/file/d/1vL8kPheS2MlntShZMVifSsJUjTRkf_x8/view?usp=drive_link" data-i18n="navDownload">Download OS</a></nav>
     </header>
-
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> إصدار مباشر · 2026.09.09</p>
-          <h1 id="hero-title">لينكس يبدو<br /><em>كما تريد تمامًا.</em></h1>
-          <p class="hero-text">Fouad OS هو نظام سريع وجميل مبني على Arch Linux، مع سطح مكتب KDE Plasma مُجهّز لتبدأ عملك، إبداعك أو لعبك من اللحظة الأولى.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" data-download href="downloads/fouad-os-live-2026.09.09-x86_64.iso">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2" /></svg>
-              حمّل Fouad OS
-            </a>
-            <a class="button button-ghost" href="#features">اكتشف النظام <span>←</span></a>
-          </div>
-          <div class="download-meta" aria-label="معلومات التحميل">
-            <span><i>✓</i> مجانًا بالكامل</span>
-            <span><i>✓</i> x86_64</span>
-            <span><i>✓</i> 2.8 GB</span>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="معاينة واجهة Fouad OS">
-          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-          <div class="desktop-window">
-            <div class="window-topbar"><span class="window-mark"></span><span>Fouad OS</span><div class="window-dots"><i></i><i></i><i></i></div></div>
-            <div class="desktop-image">
-              <div class="desktop-card card-welcome"><span class="tiny-logo">F</span><strong>مرحبًا بك</strong><small>كل ما تحتاجه جاهز هنا</small></div>
-              <div class="desktop-card card-status"><span class="pulse"></span><div><small>النظام</small><strong>جاهز للعمل</strong></div></div>
-              <div class="desktop-bar"><span class="launcher">F</span><span class="bar-app"></span><span class="bar-app"></span><span class="bar-app"></span><time>09:41</time></div>
-            </div>
-          </div>
-          <div class="float-chip chip-one"><span>⚡</span><div><small>سريع وخفيف</small><b>جاهز دائمًا</b></div></div>
-          <div class="float-chip chip-two"><span>◈</span><div><small>تصميم عصري</small><b>KDE Plasma</b></div></div>
-        </div>
-      </section>
-
-      <section class="trust-strip" aria-label="ملخص النظام">
-        <div><strong>Arch Linux</strong><span>قوة ومرونة</span></div>
-        <div><strong>KDE Plasma</strong><span>تجربة سطح مكتب جميلة</span></div>
-        <div><strong>Open Source</strong><span>حرية وتحكم كامل</span></div>
-        <div><strong>Live ISO</strong><span>جرّبه قبل التثبيت</span></div>
-      </section>
-
-      <section class="section features" id="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="eyebrow"><span></span> صُمم لك</p>
-          <h2 id="features-title">أناقة لا تُبطئك.</h2>
-          <p>كل تفصيلة في Fouad OS صُممت لتكون مألوفة وسلسة، دون أن تحدّ من طموحك.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-large">
-            <div class="feature-icon purple">✦</div>
-            <h3>واجهة تنبض بالحياة</h3>
-            <p>ثيم متناسق، شاشة ترحيب، وخلفيات حصرية تمنح سطح مكتبك هوية أنيقة منذ أول تشغيل.</p>
-            <div class="color-swatch"><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon blue">⌘</div>
-            <h3>كل أدواتك جاهزة</h3>
-            <p>متصفح، مدير ملفات، أدوات وسائط، وتطبيقات إنتاجية أساسية جاهزة للاستخدام.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon cyan">↯</div>
-            <h3>سريع عند الحاجة</h3>
-            <p>أساس Arch Linux حديث يمنحك أحدث الحزم وأداءً ممتازًا على الأجهزة المتوافقة.</p>
-          </article>
-          <article class="feature-card feature-wide">
-            <div><div class="feature-icon orange">◎</div><h3>تحكم بلا حدود</h3><p>خصص المظهر، التطبيقات، وسير عملك بحرية كاملة. هذا نظامك فعلًا.</p></div>
-            <div class="terminal" aria-hidden="true"><span>$</span> sudo pacman -S <b>possibilities</b><i>_</i></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section download-section" id="requirements" aria-labelledby="download-title">
-        <div class="download-panel">
-          <div class="download-copy">
-            <p class="eyebrow"><span></span> الإصدار الحالي</p>
-            <h2 id="download-title">ابدأ رحلتك مع<br />Fouad OS اليوم.</h2>
-            <p>نزّل ملف الـISO، جرّب النظام مباشرة من USB أو ثبّته على جهازك خلال دقائق.</p>
-            <a class="button button-primary" data-download href="downloads/fouad-os-live-2026.09.09-x86_64.iso">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2" /></svg>
-              تحميل Fouad OS 2026.09.09
-            </a>
-          </div>
-          <dl class="release-details">
-            <div><dt>الإصدار</dt><dd>2026.09.09</dd></div>
-            <div><dt>المعمارية</dt><dd>x86_64</dd></div>
-            <div><dt>حجم التحميل</dt><dd>2.8 GB</dd></div>
-            <div><dt>نوع الملف</dt><dd>ISO Hybrid</dd></div>
-          </dl>
-        </div>
-        <div class="requirements-grid">
-          <div><span class="requirement-icon">◫</span><h3>ذاكرة RAM</h3><p>4 GB كحد أدنى<br />8 GB موصى به</p></div>
-          <div><span class="requirement-icon">▣</span><h3>مساحة تخزين</h3><p>32 GB كحد أدنى<br />64 GB موصى به</p></div>
-          <div><span class="requirement-icon">⌁</span><h3>معالج 64-bit</h3><p>معالج Intel أو AMD<br />يدعم x86_64</p></div>
-        </div>
-      </section>
-
-      <section class="section install-section" id="install" aria-labelledby="install-title">
-        <div class="section-heading compact">
-          <p class="eyebrow"><span></span> ثلاث خطوات فقط</p>
-          <h2 id="install-title">من التحميل إلى سطح المكتب.</h2>
-        </div>
-        <ol class="steps">
-          <li><span class="step-number">01</span><div><h3>حمّل ملف ISO</h3><p>احصل على آخر إصدار من Fouad OS عبر زر التحميل.</p></div></li>
-          <li><span class="step-number">02</span><div><h3>أنشئ USB قابلًا للإقلاع</h3><p>استخدم Balena Etcher أو Rufus لنسخ الملف إلى USB بسعة 8 GB أو أكثر.</p></div></li>
-          <li><span class="step-number">03</span><div><h3>جرّب أو ثبّت</h3><p>أقلع من USB، ثم اختر تجربة النظام أو افتح المُثبّت من سطح المكتب.</p></div></li>
-        </ol>
-      </section>
-
-      <section class="final-cta">
-        <div class="final-orbit"></div>
-        <p class="eyebrow"><span></span> عالمك. قواعدك.</p>
-        <h2>اجعل جهازك<br /><em>يشبهك أكثر.</em></h2>
-        <a class="button button-light" data-download href="downloads/fouad-os-live-2026.09.09-x86_64.iso">تحميل Fouad OS <span>↓</span></a>
-      </section>
+      <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span></span><span data-i18n="release">Live release · 2026.09.09</span></p><h1 id="hero-title" data-i18n-html="heroTitle">Linux that looks<br /><em>exactly how you want it.</em></h1><p class="hero-text" data-i18n="heroText">Fouad OS is a fast, beautiful system built on Arch Linux, with KDE Plasma ready for your work, creativity, or play from the very first moment.</p><div class="hero-actions"><a class="button button-primary" data-download href="https://drive.google.com/file/d/1vL8kPheS2MlntShZMVifSsJUjTRkf_x8/view?usp=drive_link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2" /></svg><span data-i18n="downloadFouad">Download Fouad OS</span></a><a class="button button-ghost" href="#features"><span data-i18n="explore">Explore the system</span> <span class="arrow">→</span></a></div><div class="download-meta" aria-label="Download information"><span><i>✓</i> <span data-i18n="free">Completely free</span></span><span><i>✓</i> x86_64</span><span><i>✓</i> 2.8 GB</span></div></div>
+      <div class="hero-visual" aria-label="Fouad OS interface preview"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="desktop-window"><div class="window-topbar"><span class="window-mark"></span><span>Fouad OS</span><div class="window-dots"><i></i><i></i><i></i></div></div><div class="desktop-image"><div class="desktop-card card-welcome"><span class="tiny-logo">F</span><strong data-i18n="welcome">Welcome</strong><small data-i18n="welcomeSub">Everything you need is ready</small></div><div class="desktop-card card-status"><span class="pulse"></span><div><small data-i18n="system">System</small><strong data-i18n="ready">Ready to work</strong></div></div><div class="desktop-bar"><span class="launcher">F</span><span class="bar-app"></span><span class="bar-app"></span><span class="bar-app"></span><time>09:41</time></div></div></div><div class="float-chip chip-one"><span>⚡</span><div><small data-i18n="fastLight">Fast and lightweight</small><b data-i18n="alwaysReady">Always ready</b></div></div><div class="float-chip chip-two"><span>◈</span><div><small data-i18n="modernDesign">Modern design</small><b>KDE Plasma</b></div></div></div></section>
+      <section class="trust-strip" aria-label="System summary"><div><strong>Arch Linux</strong><span data-i18n="arch">Power and flexibility</span></div><div><strong>KDE Plasma</strong><span data-i18n="kde">A beautiful desktop experience</span></div><div><strong>Open Source</strong><span data-i18n="open">Freedom and full control</span></div><div><strong>Live ISO</strong><span data-i18n="live">Try it before installing</span></div></section>
+      <section class="section features" id="features" aria-labelledby="features-title"><div class="section-heading"><p class="eyebrow"><span></span><span data-i18n="madeForYou">Made for you</span></p><h2 id="features-title" data-i18n="featuresTitle">Elegance that never slows you down.</h2><p data-i18n="featuresText">Every detail in Fouad OS is designed to feel familiar and smooth, without limiting your ambition.</p></div><div class="feature-grid"><article class="feature-card feature-large"><div class="feature-icon purple">✦</div><h3 data-i18n="featureOneTitle">An interface with life</h3><p data-i18n="featureOneText">A coherent theme, welcome screen, and exclusive wallpapers give your desktop a refined identity from the first boot.</p><div class="color-swatch"><i></i><i></i><i></i><i></i><i></i></div></article><article class="feature-card"><div class="feature-icon blue">⌘</div><h3 data-i18n="featureTwoTitle">Your tools are ready</h3><p data-i18n="featureTwoText">A browser, file manager, media tools, and essential productivity apps are ready to use.</p></article><article class="feature-card"><div class="feature-icon cyan">↯</div><h3 data-i18n="featureThreeTitle">Fast when it matters</h3><p data-i18n="featureThreeText">The modern Arch Linux foundation brings the latest packages and excellent performance to compatible hardware.</p></article><article class="feature-card feature-wide"><div><div class="feature-icon orange">◎</div><h3 data-i18n="featureFourTitle">Control without limits</h3><p data-i18n="featureFourText">Customize the look, applications, and workflow with complete freedom. This is truly your system.</p></div><div class="terminal" aria-hidden="true"><span>$</span> sudo pacman -S <b>possibilities</b><i>_</i></div></article></div></section>
+      <section class="section download-section" id="requirements" aria-labelledby="download-title"><div class="download-panel"><div class="download-copy"><p class="eyebrow"><span></span><span data-i18n="currentRelease">Current release</span></p><h2 id="download-title" data-i18n-html="downloadTitle">Start your journey with<br />Fouad OS today.</h2><p data-i18n="downloadText">Download the ISO, try the system directly from a USB drive, or install it on your device in minutes.</p><a class="button button-primary" data-download href="https://drive.google.com/file/d/1vL8kPheS2MlntShZMVifSsJUjTRkf_x8/view?usp=drive_link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2" /></svg><span data-i18n="downloadVersion">Download Fouad OS 2026.09.09</span></a></div><dl class="release-details"><div><dt data-i18n="version">Version</dt><dd>2026.09.09</dd></div><div><dt data-i18n="architecture">Architecture</dt><dd>x86_64</dd></div><div><dt data-i18n="fileSize">File size</dt><dd>2.8 GB</dd></div><div><dt data-i18n="fileType">File type</dt><dd>ISO Hybrid</dd></div></dl></div><div class="requirements-grid"><div><span class="requirement-icon">◫</span><h3 data-i18n="ram">RAM</h3><p data-i18n-html="ramText">4 GB minimum<br />8 GB recommended</p></div><div><span class="requirement-icon">▣</span><h3 data-i18n="storage">Storage</h3><p data-i18n-html="storageText">32 GB minimum<br />64 GB recommended</p></div><div><span class="requirement-icon">⌁</span><h3 data-i18n="cpu">64-bit processor</h3><p data-i18n-html="cpuText">Intel or AMD processor<br />with x86_64 support</p></div></div></section>
+      <section class="section install-section" id="install" aria-labelledby="install-title"><div class="section-heading compact"><p class="eyebrow"><span></span><span data-i18n="threeSteps">Just three steps</span></p><h2 id="install-title" data-i18n="installTitle">From download to desktop.</h2></div><ol class="steps"><li><span class="step-number">01</span><div><h3 data-i18n="stepOneTitle">Download the ISO</h3><p data-i18n="stepOneText">Get the latest Fouad OS release using the download button.</p></div></li><li><span class="step-number">02</span><div><h3 data-i18n="stepTwoTitle">Create a bootable USB</h3><p data-i18n="stepTwoText">Use Balena Etcher or Rufus to write the file to a USB drive with 8 GB or more.</p></div></li><li><span class="step-number">03</span><div><h3 data-i18n="stepThreeTitle">Try or install</h3><p data-i18n="stepThreeText">Boot from the USB, then choose to try the system or open the installer from the desktop.</p></div></li></ol></section>
+      <section class="final-cta"><div class="final-orbit"></div><p class="eyebrow"><span></span><span data-i18n="yourWorld">Your world. Your rules.</span></p><h2 data-i18n-html="finalTitle">Make your device<br /><em>feel more like you.</em></h2><a class="button button-light" data-download href="https://drive.google.com/file/d/1vL8kPheS2MlntShZMVifSsJUjTRkf_x8/view?usp=drive_link"><span data-i18n="downloadFouad">Download Fouad OS</span> <span>↓</span></a></section>
     </main>
-
-    <footer>
-      <a class="brand" href="#top"><img src="branding/icons/fouad-os.svg" alt="" /><span>Fouad <b>OS</b></span></a>
-      <p>صُنع بحب للمجتمع الحر.</p>
-      <a href="#top" class="to-top">العودة للأعلى ↑</a>
-    </footer>
-
+    <footer><a class="brand" href="#top"><img src="branding/icons/fouad-os.svg" alt="" /><span>Fouad <b>OS</b></span></a><p data-i18n="footer">Made with love for the free software community.</p><a href="#top" class="to-top" data-i18n="backTop">Back to top ↑</a></footer>
     <script src="app.js"></script>
   </body>
 </html>
